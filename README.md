@@ -132,3 +132,17 @@ The database is designed to support the core functionalities of the Airbnb Clone
 - **Users** can leave multiple **Reviews**, each tied to a specific **Property**.  
 - Each **Booking** has one corresponding **Payment** record.
 
+
+
+ Feature Breakdown
+Objective: Detail the features of the Airbnb Clone project.
+
+Instructions:
+
+-In your README.md file, create a section called “Feature Breakdown”.
+
+List the main features (e.g., user management, property management, booking system, etc.) as outlined in the project overview.
+
+Provide a 2-3 sentence description of each feature, explaining how it contributes to the project.
+
+Commit and push the changes to your GitHub repository.
