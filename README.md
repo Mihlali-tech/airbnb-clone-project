@@ -41,6 +41,8 @@ Uses technologies like Django, MySQL, GraphQL, along with CI/CD tools such as Do
 
 Stay tuned for updates as the project progresses!
 
+
+
 ## Updated Team Roles
 
 This project simulates a full-stack team working collaboratively on a scalable web application. Below are the key roles and their responsibilities:
@@ -65,6 +67,8 @@ Maintains high-quality project documentation. Ensures clarity in README, databas
 
 ### 🔹 Project Manager
 Coordinates team members, milestones, and delivery timelines. Keeps development aligned with project goals and ensures collaboration across roles.
+
+
 
 ## Technology Stack
 
@@ -91,3 +95,40 @@ A programming language used to add interactivity and dynamic behavior to the fro
 
 ### Unit Testing (unittest module)  
 Python’s built-in testing framework used to write and run tests to ensure that individual units of code work as expected and maintain code quality.
+
+
+
+## Database Design
+
+The database is designed to support the core functionalities of the Airbnb Clone platform. Below are the key entities and their relationships:
+
+### Users  
+- **Fields:** `id`, `name`, `email`, `password_hash`, `phone_number`  
+- **Description:** Represents the users of the platform, including hosts and guests. Users can list properties, make bookings, and leave reviews.
+
+### Properties  
+- **Fields:** `id`, `owner_id` (references Users), `title`, `description`, `location`, `price_per_night`  
+- **Description:** Represents the rental properties listed by users (hosts). Each property is owned by one user but can have many bookings.
+
+### Bookings  
+- **Fields:** `id`, `user_id` (guest, references Users), `property_id` (references Properties), `start_date`, `end_date`, `total_price`  
+- **Description:** Records a user’s reservation of a property for a specified time period. Each booking is linked to one property and one user.
+
+### Reviews  
+- **Fields:** `id`, `user_id` (author, references Users), `property_id` (references Properties), `rating`, `comment`, `created_at`  
+- **Description:** Users can leave reviews and ratings for properties they have stayed at.
+
+### Payments  
+- **Fields:** `id`, `booking_id` (references Bookings), `amount`, `payment_date`, `payment_method`, `status`  
+- **Description:** Tracks payment transactions related to bookings, including amount paid and payment status.
+
+---
+
+### Relationships Overview
+
+- **Users** can own multiple **Properties**.  
+- Each **Property** can have many **Bookings**.  
+- Each **Booking** is made by one **User** and is for one **Property**.  
+- **Users** can leave multiple **Reviews**, each tied to a specific **Property**.  
+- Each **Booking** has one corresponding **Payment** record.
+
