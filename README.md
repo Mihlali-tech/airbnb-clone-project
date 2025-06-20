@@ -66,3 +66,28 @@ Maintains high-quality project documentation. Ensures clarity in README, databas
 ### 🔹 Project Manager
 Coordinates team members, milestones, and delivery timelines. Keeps development aligned with project goals and ensures collaboration across roles.
 
+## Technology Stack
+
+### Django  
+A high-level Python web framework used to build the backend of the application, providing tools to develop RESTful APIs, handle routing, and manage user authentication securely and efficiently.
+
+### MySQL  
+A relational database management system used to store and manage the application's data, such as user profiles, listings, bookings, and reviews.
+
+### GraphQL  
+An API query language that allows clients to request exactly the data they need, improving flexibility and performance compared to traditional REST APIs.
+
+### Docker  
+A containerization platform that packages the application and its dependencies into portable containers, ensuring consistent environments across development, testing, and production.
+
+### GitHub Actions  
+A continuous integration and continuous deployment (CI/CD) platform integrated with GitHub to automate testing, building, and deployment pipelines for the application.
+
+### HTML/CSS  
+Technologies used to build and style the frontend user interface, ensuring the web pages are visually appealing and responsive.
+
+### JavaScript  
+A programming language used to add interactivity and dynamic behavior to the frontend, enabling features such as client-side validation and asynchronous requests.
+
+### Unit Testing (unittest module)  
+Python’s built-in testing framework used to write and run tests to ensure that individual units of code work as expected and maintain code quality.
