@@ -146,3 +146,35 @@ List the main features (e.g., user management, property management, booking syst
 Provide a 2-3 sentence description of each feature, explaining how it contributes to the project.
 
 Commit and push the changes to your GitHub repository.
+
+
+
+## API Security
+
+Securing the backend APIs is critical to protect user data, maintain trust, and ensure the integrity of the Airbnb Clone platform. The following key security measures will be implemented:
+
+### Authentication  
+Users must securely verify their identity before accessing protected resources. This prevents unauthorized access and ensures that only legitimate users can interact with the system.
+
+### Authorization  
+After authentication, authorization controls what actions a user can perform based on their role (e.g., guest, host, admin). This protects sensitive operations like managing listings and processing payments.
+
+### Rate Limiting  
+To prevent abuse and denial-of-service attacks, the API will enforce rate limiting. This limits the number of requests a client can make within a given timeframe, maintaining service availability and stability.
+
+### Data Encryption  
+Sensitive data such as passwords and payment information will be encrypted both in transit (using HTTPS) and at rest to prevent data breaches.
+
+### Input Validation and Sanitization  
+All inputs will be validated and sanitized to prevent common security vulnerabilities like SQL injection and cross-site scripting (XSS).
+
+---
+
+**Why Security Matters:**
+
+- Protecting **user data** (personal information, passwords) is essential for user privacy and regulatory compliance.  
+- Securing **payments** prevents fraud and financial loss.  
+- Preventing **unauthorized access** ensures only rightful users can modify their data and listings.  
+- Maintaining **service availability** through rate limiting avoids downtime from malicious attacks.
+
+
