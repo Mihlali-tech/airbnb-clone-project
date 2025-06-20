@@ -178,3 +178,24 @@ All inputs will be validated and sanitized to prevent common security vulnerabil
 - Maintaining **service availability** through rate limiting avoids downtime from malicious attacks.
 
 
+
+## CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) pipelines automate the process of building, testing, and deploying the application. This ensures that code changes are integrated smoothly and delivered quickly with minimal errors.
+
+In this project, CI/CD pipelines help:
+
+- Maintain code quality by running automated tests on every commit  
+- Automate builds and deployments to development or production environments  
+- Reduce manual errors and speed up delivery cycles  
+- Enable collaboration by providing fast feedback to the team
+
+### Tools Used
+
+- **GitHub Actions:** Provides automation for testing, building, and deploying the application directly from the GitHub repository.  
+- **Docker:** Packages the application and its dependencies into containers, enabling consistent environments across development, testing, and production.
+
+Implementing CI/CD pipelines is essential for managing complex workflows, improving efficiency, and ensuring a reliable, scalable AirBnB Clone platform.
+
+
+
